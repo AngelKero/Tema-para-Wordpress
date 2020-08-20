@@ -1,0 +1,53 @@
+header
+    .logo-redes
+        background: $fondo-oscuro
+        .logo
+            padding: 0
+            padding-top: 1.25em
+            padding-bottom: 1.25em
+            a
+                img
+                    vertical-align: top
+        .redes
+            display: block
+            padding-top: 1.25em
+            padding-bottom: 1.25em
+            line-height: 5em
+            a
+                border-radius: 50%
+                text-align: center
+                height: 2.5em
+                width: 2.5em
+                margin-left: 1.3em
+                line-height: 2.5em
+                background: $Viajar-2-rgba
+                color: white
+                font-size: 1em
+                transition: all .3s linear
+                &.youtube
+                    background: #ff0000
+                    color: #282828
+                &.instagram
+                    background: #fcaf45
+                &.facebook
+                    background: #3b5998
+                &:hover
+                    background: $Viajar-2-rgba
+                    color: white
+    .menu
+        background: $Viajar-4-hex
+        ul
+            list-style: none
+            padding: 0
+            display: flex
+            flex-wrap: wrap
+            a
+                display: inline-block
+                border-bottom: 3px solid $Viajar-4-hex
+                padding: 0.9em 1.2em
+                margin: 0
+                text-decoration: none
+                &:hover
+                    background: $Viajar-5-hex
+                    color: white
+                    border-bottom: 3px solid $Viajar-2-hex

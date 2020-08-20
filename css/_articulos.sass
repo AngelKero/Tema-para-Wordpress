@@ -1,0 +1,85 @@
+main
+    .articulos
+        .posts
+            .post
+                padding: 0px 1em
+                margin-bottom: 2.5em
+                .contenedor
+                    box-shadow: 0px 0px 10px 3px #2727279d
+                    background: white
+                    overflow: hidden
+                    border-radius: 4px
+                    padding: 0
+                    .thumb
+                        overflow: hidden
+                        img
+                            width: 100%
+                            height: auto
+                            vertical-align: top
+                            transition: all .3s linear
+                            &:hover
+                                opacity: .85
+                                transform: scale(1.3)
+                    .contenedor-info
+                        padding: 0px 1.2em
+                        .info
+                            .titulo
+                                font-size: 1.1em
+                                padding: 1.3em 0px
+                                padding-bottom: .5em
+                                text-align: center
+                                margin: 0
+                                color: $Viajar-2-hex
+                                &.single
+                                    font-size: 1.4em
+                            .fecha
+                                font-size: .7em
+                                text-align: right
+                                font-weight: 300
+                                border-bottom: 1px solid black
+                                margin-bottom: .8em
+                                color: #0202028f
+                                &.single
+                                    font-size: 1em
+                            .texto
+                                img
+                                    max-width: 100%
+                                    height: auto
+                                *
+                                    margin-bottom: 1.3em
+                            .extracto
+                                font-size: .8em
+                                text-align: left
+                                line-height: 1.5em
+                                padding-bottom: .6em
+                                border-bottom: 1px solid black
+                                overflow: hidden
+                                height: 12.3em
+                                max-height: 12.3em
+                                transition: all .3s ease
+                                &:hover
+                                    overflow: auto
+                            .categorias
+                                padding: 1em 0px
+                                display: flex
+                                flex-wrap: wrap
+                                justify-content: space-around
+                                &.single
+                                    padding: 0.3em
+                                    justify-content: start
+                                    a
+                                        margin-right: 0.4em
+                                ul
+                                    list-style: none
+                                    li
+                                        display: inline-block
+                                a
+                                    font-size: .7em
+                                    padding: 3px 14px
+                                    border-radius: 4px
+                                    text-decoration: 0
+                                    background: $Viajar-4-hex
+                                    color: black
+                                    &:hover
+                                        background: $Viajar-5-hex
+                                        color: white

@@ -1,0 +1,81 @@
+$fondo: #cfcfcff2
+$fondo-oscuro: #464646
+/* Color Theme Swatches in Hex */
+$Viajar-1-hex: #011F26
+$Viajar-2-hex: #118C76
+$Viajar-3-hex: #25D9B8
+$Viajar-4-hex: #F2BB16
+$Viajar-5-hex: #BF800B
+
+/* Color Theme Swatches in RGBA */
+$Viajar-1-rgba: rgba(0,31,38, 1)
+$Viajar-2-rgba: rgba(16,140,117, 1)
+$Viajar-3-rgba: rgba(36,216,183, 1)
+$Viajar-4-rgba: rgba(242,187,21, 1)
+$Viajar-5-rgba: rgba(191,128,11, 1)
+
+//  Fuentes
+$font-family-p: 'Inconsolata', monospace
+$font-family-e: 'Oxanium', cursive
+$font-size: 16px
+$letter-spacing: 1px
+
+*
+    margin: 0px
+    padding: 0px
+    &::selection
+        background: #910585dc
+        color: white
+
+body
+    background: $fondo
+    letter-spacing: $letter-spacing
+    font-size: $font-size * 1.2
+    font-family: $font-family-p
+
+.ad
+    margin-bottom: 1.25em
+
+a
+    color: $Viajar-2-rgba
+    transition: all .3s ease
+    display: inline-block
+    &:hover
+        color: $Viajar-3-rgba
+
+.seccion-titulo
+    border-bottom: 3px solid $Viajar-5-hex
+    margin-bottom: 2.5em
+
+.titulo
+    letter-spacing: $letter-spacing
+    font-family: $font-family-e
+    font-weight: 300
+
+p
+    margin: 0
+    padding: 0
+
+.up
+    position: fixed
+    bottom: 2em
+    right: 2em
+    a
+        padding-top: 1.5em
+        border-radius: 50%
+        color: white
+        font-size: .7em
+        line-height: .7em
+        width: 50px
+        height: 50px
+        text-align: center
+        background: $Viajar-1-hex
+    
+
+@import header
+@import articulos
+@import paginacion
+@import sidebar
+@import footer
+@import media
+@import comentarios

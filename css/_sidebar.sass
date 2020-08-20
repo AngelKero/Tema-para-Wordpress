@@ -1,0 +1,68 @@
+.widgets
+    .widget
+        overflow: hidden
+        padding-bottom: 3em
+        .seccion-titulo
+            margin-bottom: 1em
+        &.redes-sociales
+            a
+                overflow: hidden
+                float: left
+                width: 33.333333%
+                text-align: center
+                padding: 1.25em
+                background: #3a3a3a
+                display: inline-block
+                color: white
+                transition: all .3s ease
+                .icono
+                    width: 100%
+                    font-size: 1.6em
+                    margin-bottom: 0.3em
+                &.youtube
+                    background: #ff0000
+                &.instagram
+                    background: #f56040
+                &.facebook
+                    background: #3b5998
+                &:hover
+                    text-decoration: none
+                    background: $Viajar-2-hex
+                    color: white
+        &.boletin
+            .formulario
+                background: $fondo-oscuro
+                overflow: hidden
+                border-radius: 4px
+                padding: 1em 0.7em
+                label[for="email"]
+                    display: block
+                    text-align: center  
+                    color: white
+                    font-size: 1.1em
+                    padding-bottom: 0.4em
+                    border-bottom: 1px solid white
+                    margin-bottom: 1.5em
+                input[type="email"]
+                    display: block
+                    border: none
+                    width: 100%
+                    padding: 0.2em 0.4em
+                    border-radius: 3px
+                    color: black
+                    margin-bottom: 1em
+                input[type="submit"]
+                    display: block
+                    margin: auto
+                    padding: 0.3em 0.6em
+                    color: black
+                    background: white
+                    border: none
+                    box-shadow: 0px 6px $Viajar-2-hex
+                    &:hover
+                        box-shadow: 0 4px $Viajar-2-hex
+                        outline: none
+                        transform: translateY(2px)
+                    &:active
+                        box-shadow: none
+                        transform: translateY(4px)
